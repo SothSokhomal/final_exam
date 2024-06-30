@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PET FINDER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="banner">
+    <div class="overlay">
+      <h2 class="slogan">Find Your New Best Friend</h2>
+    </div>
+  </div>
+
+  <section id="filterBtnWrapper">
+
+    <button id="filterBtn" data-animal="dog">
+      <img src="./images/dog.png" alt="">
+    </button>
+    <button id="filterBtn" data-animal="cat">
+      <img src="./images/cat.png" alt="">
+    </button>
+    <button id="filterBtn" data-animal="fish">
+      <img src="./images/fish.png" alt="">
+    </button>
+    <button id="filterBtn" data-animal="rabbit">
+      <img src="./images/rabbit.png" alt="">
+    </button>
+    <button id="filterBtn" data-animal="other">
+      <img src="./images/pet.png" alt="">
+    </button>
+
+  </section>
+
+
+  <main>
+
+    <section id="sidebar">
+      <h2 class="section-title">Add New Pet</h2>
+      <form id="addNewPetForm">
+        <label>Photo: </label>
+        <input type="file" id="photo">
+        <label>Animal</label>
+        <select id="animal">
+          <option value="dog">dog</option>
+          <option value="cat">cat</option>
+          <option value="rabbit">rabbit</option>
+          <option value="bird">bird</option>
+          <option value="fish">fish</option>
+          <option value="other">other</option>
+        </select>
+
+        <label>Gender</label>
+        <select id="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+
+        <label>Name</label>
+        <input type="text" id="name">
+
+        <label>Age</label>
+        <input type="text" id="age">
+
+        <label>Description</label>
+        <input type="text" id="description">
+
+        <label>Contact</label>
+        <input type="email" id="contact">
+      
+        <button type="submit">Add Pet</button>
+      </form>
+
+    </section>
+
+    <section id="pet">
+      <h2 class="section-title">ALL PETS ARE HERE</h2>
+  
+      <div class="petWrapper">
+  
+        <a href="detail.html?id=">
+          <div class="pet">
+            <img src="./images/kranit_fish.jpg" alt="">
+            <h4>Fish</h4>
+          </div>
+        </a>
+
+      </div>
+  
+    </section>
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <h2>HOPE YOU FIND YOUR BEST FRIEND HERE</h2>
+    <h4>&copy;ALL RIGHT RESERVED 2024</h4>
+  </footer>
+
+
+
+
+  <script type="module" src="src/pages/index.js"></script>
+</body>
+</html>
